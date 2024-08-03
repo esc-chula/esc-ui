@@ -1,7 +1,8 @@
-import { cn } from '@/utils'
-import { cva, type VariantProps } from 'class-variance-authority'
-import { forwardRef } from 'react'
 import { Slot } from '@radix-ui/react-slot'
+import { type VariantProps, cva } from 'class-variance-authority'
+import { forwardRef } from 'react'
+
+import { cn } from '@/utils'
 
 const buttonVariants = cva(
   [

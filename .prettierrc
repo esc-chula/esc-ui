@@ -8,9 +8,9 @@
   "singleQuote": true,
   "jsxSingleQuote": true,
   "importOrder": [
-    "^esc-ui/(.*)$",
-    "^@/components/(.*)$",
-    "^@/utils/(.*)$",
+    "^@/components(.*)$",
+    "^@/utils(.*)$",
+    "^esc-ui(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true,
