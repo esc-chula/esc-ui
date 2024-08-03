@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Node.js v20.0.0 or later (lts/iron recommended)
-- PNPM v9.0.0 or later
+- PNPM v8.0.0 or later
 
 ## Getting Started
 
