@@ -12,7 +12,7 @@
       "import": "./dist/esc-ui.js",
       "require": "./dist/esc-ui.umd.cjs"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./css": "./dist/style.css"
   },
   "sideEffects": false,
   "scripts": {
