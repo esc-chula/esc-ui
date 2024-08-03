@@ -27,7 +27,7 @@
     "test": "vitest --no-watch",
     "watch": "vitest",
     "coverage": "vitest run --coverage",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
