@@ -24,4 +24,8 @@ dist-ssr
 *.sln
 *.sw?
 
-coverage/*
+# vitest coverage
+coverage
+
+# storybook
+storybook-static
