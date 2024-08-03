@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), dts({ rollupTypes: true })],
   build: {
     lib: {
-      entry: resolve(__dirname, "lib/main.ts"),
+      entry: resolve(__dirname, "lib/index.ts"),
       name: "ESC-UI",
       fileName: "esc-ui",
     },
