@@ -20,6 +20,20 @@ export const Primary: Story = {
   },
 };
 
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    children: "Button",
+  },
+};
+
+export const Desctructive: Story = {
+  args: {
+    variant: "destructive",
+    children: "Button",
+  },
+};
+
 export const Outline: Story = {
   args: {
     variant: "outline",
@@ -30,6 +44,13 @@ export const Outline: Story = {
 export const Ghost: Story = {
   args: {
     variant: "ghost",
+    children: "Button",
+  },
+};
+
+export const Link: Story = {
+  args: {
+    variant: "link",
     children: "Button",
   },
 };

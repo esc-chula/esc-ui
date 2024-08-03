@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --esc-carmine-50: 354.5 31.4% 93.1%;
+    --esc-carmine-100: 354.3 29.6% 86.1%;
+    --esc-carmine-200: 354.3 29.6% 72.2%;
+    --esc-carmine-300: 354.3 29.6% 58.2%;
+    --esc-carmine-400: 354.3 37.2% 44.3%;
+    --esc-carmine-500: 354.3 67.7% 30.4%;
+    --esc-carmine-600: 354.3 67.7% 24.3%;
+    --esc-carmine-700: 354.3 67.7% 18.2%;
+    --esc-carmine-800: 354.3 67.7% 12.2%;
+    --esc-carmine-900: 354.3 67.7% 6.1%;
+
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: var(--esc-carmine-500);
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: var(--esc-carmine-500);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 94.9%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 94.9%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 94.9%;
+    --primary: var(--esc-carmine-500);
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: var(--esc-carmine-500);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

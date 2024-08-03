@@ -1,34 +1,21 @@
 import { cn } from "@/utils";
-import { cva, VariantProps } from "class-variance-authority";
-import { ComponentProps, forwardRef } from "react";
-
-const inputStyles = cva([
-  "w-full",
-  "border",
-  "border-gray-200",
-  "p-2",
-  "rounded-lg",
-  "transition-all",
-  "duration-100",
-  "outline-none",
-  "focus:outline-primary-500 ",
-  "focus:border-transparent",
-  "placeholder:text-gray-400",
-  "placeholder:text-sm",
-]);
-
-type InputProps = ComponentProps<"input"> & VariantProps<typeof inputStyles>;
+import { forwardRef } from "react";
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, type, ...props }, ref) => {
     return (
       <input
+        type={type}
+        className={cn(
+          "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          className
+        )}
         ref={ref}
-        type="text"
-        autoComplete="off"
-        className={cn(inputStyles({ className }))}
         {...props}
       />
     );
   }
 );
+Input.displayName = "Input";

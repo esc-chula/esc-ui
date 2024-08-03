@@ -6,47 +6,30 @@ import {
 import { VariantProps, cva } from "class-variance-authority";
 import { forwardRef } from "react";
 
-const typographyStyles = cva("w-full", {
+const typographyVariants = cva("w-full", {
   variants: {
-    emphasis: {
-      low: "text-gray-600 font-light",
-    },
-    size: {
-      sm: "text-sm",
-      base: "text-base",
-      lg: "text-lg",
-      xl: "text-xl",
-      "2xl": "text-2xl",
-      "3xl": "text-3xl",
-    },
-    weight: {
-      thin: "font-thin",
-      normal: "font-normal",
-      medium: "font-medium",
-      semibold: "font-semibold",
-      bold: "font-bold",
-      black: "font-black",
-    },
-    align: {
-      left: "text-left",
-      center: "text-center",
-      right: "text-right",
-    },
-    italic: {
-      true: "italic",
-    },
-    underline: {
-      true: "underline underline-offset-2",
+    variant: {
+      h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
+      h2: "scroll-m-20 text-3xl font-semibold tracking-tight",
+      h3: "scroll-m-20 text-2xl font-semibold tracking-tight",
+      h4: "scroll-m-20 text-xl font-semibold tracking-tight",
+      p: "leading-7",
+      blockquote: "border-l-2 italic pl-6",
+      "inline-code":
+        "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold",
+      lead: "text-xl text-muted-foreground",
+      large: "text-lg font-semibold",
+      small: "text-sm font-medium leading-none",
+      muted: "text-sm text-muted-foreground",
     },
   },
   defaultVariants: {
-    size: "base",
-    align: "left",
+    variant: "p",
   },
 });
 
 type TypographyProps<C extends React.ElementType> =
-  PolymorphicComponentPropsWithRef<C, VariantProps<typeof typographyStyles>>;
+  PolymorphicComponentPropsWithRef<C, VariantProps<typeof typographyVariants>>;
 
 type TypographyComponent = <C extends React.ElementType = "span">(
   props: TypographyProps<C>
@@ -55,17 +38,7 @@ type TypographyComponent = <C extends React.ElementType = "span">(
 // @ts-expect-error - unexpected typing errors
 export const Typography: TypographyComponent = forwardRef(
   <C extends React.ElementType = "span">(
-    {
-      as,
-      align,
-      size,
-      emphasis,
-      italic,
-      underline,
-      weight,
-      className,
-      ...props
-    }: TypographyProps<C>,
+    { as, variant, className, ...props }: TypographyProps<C>,
     ref?: PolymorphicRef<C>
   ) => {
     const Component = as || "span";
@@ -74,13 +47,8 @@ export const Typography: TypographyComponent = forwardRef(
       <Component
         ref={ref}
         className={cn(
-          typographyStyles({
-            size,
-            weight,
-            emphasis,
-            italic,
-            underline,
-            align,
+          typographyVariants({
+            variant,
             className,
           })
         )}
