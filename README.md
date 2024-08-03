@@ -32,7 +32,7 @@ UI Library built in purpose to be used internally by Engineering Student Committ
 - [x] Typography
 - [x] Label
 
-Please check the [storybook]() for more information.
+Please check the [storybook](https://esc-chula.github.io/esc-ui/) for more information.
 
 ## Contributing
 
