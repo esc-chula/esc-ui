@@ -1,20 +1,20 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Label } from ".";
+import type { Meta, StoryObj } from '@storybook/react'
+import { Label } from '.'
 
 const meta: Meta<typeof Label> = {
-  title: "Components/Label",
+  title: 'Components/Label',
   component: Label,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
-};
+  tags: ['autodocs'],
+}
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    children: "Label",
+    children: 'Label',
   },
-};
+}

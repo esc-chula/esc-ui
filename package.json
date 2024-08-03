@@ -26,7 +26,8 @@
     "build-storybook": "storybook build",
     "test": "vitest --no-watch",
     "watch": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
@@ -38,6 +39,8 @@
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@storybook/addon-essentials": "^8.0.2",
     "@storybook/addon-interactions": "^8.0.2",
     "@storybook/addon-links": "^8.0.2",
@@ -49,6 +52,7 @@
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^14.3.1",
     "@testing-library/user-event": "^14.5.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/react": "^18.2.67",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
@@ -57,11 +61,17 @@
     "@vitest/coverage-v8": "^2.0.5",
     "autoprefixer": "^10.4.18",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-tailwindcss": "^3.17.4",
+    "husky": ">=7",
     "jsdom": "^24.1.1",
+    "lint-staged": "^15.2.8",
     "postcss": "^8.4.36",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "storybook": "^8.0.2",
     "tailwindcss": "^3.4.7",
     "tailwindcss-animate": "^1.0.7",
@@ -71,5 +81,12 @@
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.0.0"
   },
-  "packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0"
+  "packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --max-warnings 0 ."
+    ],
+    "*.{css,mdx}": "prettier --write"
+  }
 }

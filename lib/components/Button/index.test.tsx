@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
-import { Button } from ".";
+import { render } from '@testing-library/react'
+import { Button } from '.'
 
 describe(`Component: ${Button.name}`, () => {
-  it("should render", () => {
-    const { container } = render(<Button>My button</Button>);
+  it('should render', () => {
+    const { container } = render(<Button>My button</Button>)
 
-    expect(container).toBeInTheDocument();
-  });
-});
+    expect(container).toBeInTheDocument()
+  })
+})
