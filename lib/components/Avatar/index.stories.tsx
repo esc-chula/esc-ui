@@ -18,12 +18,12 @@ type Story = StoryObj<typeof meta>
 export const Image: Story = {
   args: {
     src: 'https://www.boomchanotai.com/boom.png',
-    alt: 'Boom Chanotai',
-    fallback: 'BC',
+    alt: 'John Doe',
+    fallback: 'John Doe',
   },
 }
 export const Fallback: Story = {
   args: {
-    fallback: 'BC',
+    fallback: 'John Doe',
   },
 }

@@ -4,8 +4,8 @@ import * as React from 'react'
 import { cn } from '@/utils'
 
 export interface AvatarProps extends React.HTMLAttributes<HTMLImageElement> {
-  src: string
-  alt: string
+  src?: string
+  alt?: string
   fallback?: string
 }
 
