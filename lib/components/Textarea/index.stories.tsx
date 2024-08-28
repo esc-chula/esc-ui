@@ -32,7 +32,7 @@ export const LabelOnly: Story = {
 
 export const TextareaOnly: Story = {
   args: {
-    htmkFor: 'message',
+    htmlFor: 'message',
     placeholder: 'Insert text here',
   },
 }
