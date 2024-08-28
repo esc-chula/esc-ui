@@ -16,15 +16,29 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    title: 'Your Message',
+    label: 'Your Message',
+    htmlFor: 'message',
     placeholder: 'Insert text here',
     remarkText: 'Your message will be copied to the support team.',
   },
 }
 
+export const LabelOnly: Story = {
+  args: {
+    label: 'Your Message',
+    htmlFor: 'message',
+  },
+}
+
 export const TextareaOnly: Story = {
   args: {
-    title: 'Your Message',
+    htmkFor: 'message',
     placeholder: 'Insert text here',
+  },
+}
+
+export const RemarkTextOnly: Story = {
+  args: {
+    remarkText: 'Your message will be copied to the support team.',
   },
 }
