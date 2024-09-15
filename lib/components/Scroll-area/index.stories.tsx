@@ -34,7 +34,7 @@ const ExampleData = () => {
   )
 }
 
-export const Default: Story = {
+export const VerticalDemo: Story = {
   args: {},
   render: (args) => (
     <ScrollArea className='h-72 w-48 rounded-md border' {...args}>
@@ -102,7 +102,31 @@ export const HorizontalDemo: Story = {
       <div className='flex w-max space-x-4 p-4'>
         <ExampleWorks />
       </div>
-      {/* Pass the orientation from args */}
     </ScrollArea>
+  ),
+}
+
+export const MixedDemo: Story = {
+  args: {},
+  render: () => (
+    <div>
+      <ScrollArea
+        className='h-72 w-full rounded-md border'
+        orientation='vertical'
+      >
+        <div className='p-4'>
+          <h4 className='mb-4 text-sm font-medium leading-none'>Tags</h4>
+          <ExampleData />
+        </div>
+      </ScrollArea>
+      <ScrollArea
+        className='w-96 whitespace-nowrap rounded-md border'
+        orientation='horizontal'
+      >
+        <div className='flex w-max space-x-4 p-4'>
+          <ExampleWorks />
+        </div>
+      </ScrollArea>
+    </div>
   ),
 }
