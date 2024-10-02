@@ -27,10 +27,34 @@ UI Library built in purpose to be used internally by Engineering Student Committ
 
 ## Components
 
+- [ ] Accordion
+- [ ] Alet Dialog
+- [ ] Aspect Ratio
+- [x] Avatar
 - [x] Button
+- [x] Checkbox
+- [x] Collapsible
+- [ ] Command
+- [x] Context Menu
+- [ ] Dialog
+- [x] Dropdown Menu
+- [ ] Hover Card
 - [x] Input
-- [x] Typography
 - [x] Label
+- [x] Menubar
+- [x] Navigation Menu
+- [ ] Popover
+- [x] Progress
+- [x] Radio Group
+- [x] Scroll Area
+- [ ] Select
+- [x] Seperator
+- [ ] Slider
+- [x] Switch
+- [x] Tabs
+- [x] Text Area
+- [ ] Tooltip
+- [x] Typography
 
 Please check the [storybook](https://esc-chula.github.io/esc-ui/) for more information.
 
