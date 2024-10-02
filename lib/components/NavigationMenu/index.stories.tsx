@@ -101,7 +101,7 @@ export const Default: Story = {
               <li className='row-span-3'>
                 <NavigationMenuLink asChild>
                   <a
-                    className='flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
+                    className='flex size-full select-none flex-col justify-end rounded-md bg-neutral-100 p-6 no-underline outline-none focus:shadow-md'
                     href='/'
                   >
                     <div className='mb-2 mt-4 text-lg font-medium'>
