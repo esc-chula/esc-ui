@@ -83,9 +83,7 @@ const ExampleWorks = () => {
             </div>
             <figcaption className='pt-2 text-xs text-neutral-500'>
               Photo by{' '}
-              <span className='font-semibold text-foreground'>
-                {artwork.artist}
-              </span>
+              <span className='font-semibold text-black'>{artwork.artist}</span>
             </figcaption>
           </figure>
         </React.Fragment>
@@ -108,8 +106,8 @@ export const HorizontalDemo: Story = {
 
 export const MixedDemo: Story = {
   args: {},
-  render: () => (
-    <div>
+  render: (args) => (
+    <div {...args} className='space-y-4'>
       <ScrollArea
         className='h-72 w-full rounded-md border'
         orientation='vertical'
