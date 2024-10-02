@@ -14,11 +14,11 @@ const typographyVariants = cva('w-full', {
       p: 'leading-7',
       blockquote: 'border-l-2 pl-6 italic',
       'inline-code':
-        'relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
-      lead: 'text-xl text-muted-foreground',
+        'relative rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
+      lead: 'text-xl text-slate-900',
       large: 'text-lg font-semibold',
       small: 'text-sm font-medium leading-none',
-      muted: 'text-sm text-muted-foreground',
+      subtle: 'text-sm text-slate-500',
     },
   },
   defaultVariants: {

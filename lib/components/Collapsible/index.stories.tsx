@@ -18,11 +18,13 @@ export default meta
 type Story = StoryObj<typeof Collapsible>
 
 export const Default: Story = {
-  render: () => {
+  args: {},
+  render: (args) => {
     const [isOpen, setIsOpen] = React.useState(false)
 
     return (
       <Collapsible
+        {...args}
         open={isOpen}
         onOpenChange={setIsOpen}
         className='w-[350px] space-y-2'
