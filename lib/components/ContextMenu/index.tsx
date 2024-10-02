@@ -142,7 +142,7 @@ const ContextMenuLabel = React.forwardRef<
   <ContextMenuPrimitive.Label
     ref={ref}
     className={cn(
-      'px-2 py-1.5 text-sm font-semibold text-foreground',
+      'text-foreground px-2 py-1.5 text-sm font-semibold',
       inset && 'pl-8',
       className
     )}
@@ -157,7 +157,7 @@ const ContextMenuSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <ContextMenuPrimitive.Separator
     ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-border', className)}
+    className={cn('-mx-1 my-1 h-px bg-neutral-200', className)}
     {...props}
   />
 ))
