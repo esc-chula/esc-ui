@@ -25,13 +25,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        default: 'bg-carmine-500 text-white hover:bg-carmine-400',
         secondary: 'bg-neutral-100 text-black hover:bg-neutral-200',
         destructive: 'bg-red-500 text-white hover:bg-red-600',
         outline:
           'border border-neutral-200 bg-white hover:bg-neutral-100 hover:text-black',
         ghost: 'hover:bg-neutral-100 hover:text-black',
-        link: 'text-primary underline-offset-4 hover:underline',
+        link: 'text-black underline-offset-4 hover:underline',
       },
       size: {
         default: 'h-10 px-4 py-2',

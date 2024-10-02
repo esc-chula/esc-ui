@@ -81,7 +81,7 @@ const ExampleWorks = () => {
                 height={400}
               />
             </div>
-            <figcaption className='pt-2 text-xs text-muted-foreground'>
+            <figcaption className='pt-2 text-xs text-neutral-500'>
               Photo by{' '}
               <span className='font-semibold text-foreground'>
                 {artwork.artist}
