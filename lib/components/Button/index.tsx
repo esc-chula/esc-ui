@@ -17,7 +17,7 @@ const buttonVariants = cva(
     'transition-colors',
     'focus-visible:outline-none',
     'focus-visible:ring-2',
-    'focus-visible:ring-ring',
+    'focus-visible:ring-carmine-500',
     'focus-visible:ring-offset-2',
     'disabled:pointer-events-none',
     'disabled:opacity-50',
