@@ -6,6 +6,15 @@ const meta: Meta<typeof Accordion> = {
   title: 'Components/Accordion',
   component: Accordion,
   tags: ['autodocs'],
+  argTypes: {
+    type: {
+      control: 'radio',
+      options: ['single', 'multiple'],
+    },
+    items: {
+      control: 'object',
+    },
+  },
 }
 
 export default meta
@@ -29,28 +38,47 @@ const AccordionTest = ({
 )
 
 export const SingleAccordion: Story = {
-  render: () => (
-    <AccordionTest
-      items={[
-        {
-          title: 'Is it accessible?',
-          content: 'Yes. It adheres to the WAI-ARIA design pattern.',
-        },
-      ]}
-    />
-  ),
+  args: {
+    type: 'single',
+    items: [
+      {
+        title: 'Is it accessible?',
+        content: 'Yes. It adheres to the WAI-ARIA design pattern.',
+      },
+      {
+        title: 'Is it styled?',
+        content:
+          "Yes. It comes with default styles that matches the other components' aesthetic.",
+      },
+      {
+        title: 'Is it animated?',
+        content:
+          "Yes. It's animated by default, but you can disable it if you prefer.",
+      },
+    ],
+  },
+  render: (args) => <AccordionTest type={args.type} items={args.items} />,
 }
 
 export const MultipleAccordion: Story = {
-  render: () => (
-    <AccordionTest
-      type='multiple'
-      items={[
-        {
-          title: 'Is it accessible?',
-          content: 'Yes. It adheres to the WAI-ARIA design pattern.',
-        },
-      ]}
-    />
-  ),
+  args: {
+    type: 'multiple',
+    items: [
+      {
+        title: 'Is it accessible?',
+        content: 'Yes. It adheres to the WAI-ARIA design pattern.',
+      },
+      {
+        title: 'Is it styled?',
+        content:
+          "Yes. It comes with default styles that matches the other components' aesthetic.",
+      },
+      {
+        title: 'Is it animated?',
+        content:
+          "Yes. It's animated by default, but you can disable it if you prefer.",
+      },
+    ],
+  },
+  render: (args) => <AccordionTest {...args} />,
 }
