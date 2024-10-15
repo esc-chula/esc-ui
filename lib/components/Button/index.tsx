@@ -13,11 +13,11 @@ const buttonVariants = cva(
     'rounded-md',
     'text-sm',
     'font-medium',
-    'ring-offset-background',
+    'ring-offset-white',
     'transition-colors',
     'focus-visible:outline-none',
     'focus-visible:ring-2',
-    'focus-visible:ring-ring',
+    'focus-visible:ring-carmine-500',
     'focus-visible:ring-offset-2',
     'disabled:pointer-events-none',
     'disabled:opacity-50',
@@ -25,15 +25,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-        secondary:
-          'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        destructive:
-          'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+        default: 'bg-carmine-500 text-white hover:bg-carmine-400',
+        secondary: 'bg-neutral-100 text-black hover:bg-neutral-200',
+        destructive: 'bg-red-500 text-white hover:bg-red-600',
         outline:
-          'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary underline-offset-4 hover:underline',
+          'border border-neutral-200 bg-white hover:bg-neutral-100 hover:text-black',
+        ghost: 'hover:bg-neutral-100 hover:text-black',
+        link: 'text-black underline-offset-4 hover:underline',
       },
       size: {
         default: 'h-10 px-4 py-2',

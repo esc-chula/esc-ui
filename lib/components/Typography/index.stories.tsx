@@ -96,10 +96,10 @@ export const Small: Story = {
   },
 }
 
-export const Muted: Story = {
+export const Subtle: Story = {
   args: {
     as: 'p',
-    variant: 'muted',
+    variant: 'subtle',
     children: 'Do anyone hear me?',
   },
 }
