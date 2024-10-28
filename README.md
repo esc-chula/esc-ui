@@ -29,7 +29,6 @@ UI Library built in purpose to be used internally by Engineering Student Committ
 
 - [x] Accordion
 - [x] Alert Dialog
-- [ ] Aspect Ratio
 - [x] Avatar
 - [x] Button
 - [x] Checkbox
