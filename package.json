@@ -1,7 +1,7 @@
 {
   "name": "esc-ui",
   "description": "Internal UI library for Engineering Student Committee, Chulalongkorn University",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "files": [
     "dist"
