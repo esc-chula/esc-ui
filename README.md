@@ -27,8 +27,8 @@ UI Library built in purpose to be used internally by Engineering Student Committ
 
 ## Components
 
-- [ ] Accordion
-- [ ] Alet Dialog
+- [x] Accordion
+- [x] Alert Dialog
 - [ ] Aspect Ratio
 - [x] Avatar
 - [x] Button
@@ -36,20 +36,21 @@ UI Library built in purpose to be used internally by Engineering Student Committ
 - [x] Collapsible
 - [ ] Command
 - [x] Context Menu
-- [ ] Dialog
+- [x] Dialog
 - [x] Dropdown Menu
-- [ ] Hover Card
+- [x] ESC Logo
+- [x] Hover Card
 - [x] Input
 - [x] Label
 - [x] Menubar
 - [x] Navigation Menu
-- [ ] Popover
+- [x] Popover
 - [x] Progress
 - [x] Radio Group
 - [x] Scroll Area
-- [ ] Select
+- [x] Select
 - [x] Seperator
-- [ ] Slider
+- [x] Slider
 - [x] Switch
 - [x] Tabs
 - [x] Text Area
