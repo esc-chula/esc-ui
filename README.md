@@ -33,7 +33,7 @@ UI Library built in purpose to be used internally by Engineering Student Committ
 - [x] Button
 - [x] Checkbox
 - [x] Collapsible
-- [ ] Command
+- [x] Command
 - [x] Context Menu
 - [x] Dialog
 - [x] Dropdown Menu
